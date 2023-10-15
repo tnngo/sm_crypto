@@ -610,9 +610,9 @@ void _typeProsecutor({
   SM4PaddingMode padding = SM4PaddingMode.PKCS7,
   dynamic iv,
 }) {
-  if (key.length != 32) {
-    throw Exception('wrong key! nedd 128 bits. string length 32');
-  }
+  // if (key.length != 32) {
+  //   throw Exception('wrong key! nedd 128 bits. string length 32');
+  // }
 
   // only PKCS5, PKCS5, NONE
   if (padding != SM4PaddingMode.PKCS5 &&
